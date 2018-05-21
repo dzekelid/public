@@ -1,0 +1,116 @@
+---
+swagger: "2.0"
+x-collection-name: Azure Virtual Network
+x-complete: 1
+info:
+  title: NetworkManagementClient
+  description: the-microsoft-azure-network-management-api-provides-a-restful-set-of-web-services-that-interact-with-microsoft-azure-networks-service-to-manage-your-network-resources-the-api-has-entities-that-capture-the-relationship-between-an-end-user-and-the-microsoft-azure-networks-service
+  version: 1.0.0
+host: management.azure.com
+basePath: /
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/publicIPAddresses/{publicIpAddressName}
+  : delete:
+      summary: Public IPAddresses Delete
+      description: Deletes the specified public IP address.
+      operationId: PublicIPAddresses_Delete
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-delete
+      parameters:
+      - in: query
+        name: No Name
+      - in: path
+        name: publicIpAddressName
+        description: The name of the subnet
+      - in: path
+        name: resourceGroupName
+        description: The name of the resource group
+      responses:
+        200:
+          description: OK
+      tags:
+      - Public IP Address
+    get:
+      summary: Public IPAddresses Get
+      description: Gets the specified public IP address in a specified resource group.
+      operationId: PublicIPAddresses_Get
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-get
+      parameters:
+      - in: query
+        name: $expand
+        description: Expands referenced resources
+      - in: query
+        name: No Name
+      - in: path
+        name: publicIpAddressName
+        description: The name of the subnet
+      - in: path
+        name: resourceGroupName
+        description: The name of the resource group
+      responses:
+        200:
+          description: OK
+      tags:
+      - Public IP Address
+    put:
+      summary: Public IPAddresses Create Or Update
+      description: Creates or updates a static or dynamic public IP address.
+      operationId: PublicIPAddresses_CreateOrUpdate
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-put
+      parameters:
+      - in: query
+        name: No Name
+      - in: body
+        name: parameters
+        description: Parameters supplied to the create or update public IP address
+          operation
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: publicIpAddressName
+        description: The name of the public IP address
+      - in: path
+        name: resourceGroupName
+        description: The name of the resource group
+      responses:
+        200:
+          description: OK
+      tags:
+      - Public IP Address
+  /subscriptions/{subscriptionId}/providers/Microsoft.Network/publicIPAddresses:
+    get:
+      summary: Public IPAddresses List All
+      description: Gets all the public IP addresses in a subscription.
+      operationId: PublicIPAddresses_ListAll
+      x-api-path-slug: subscriptionssubscriptionidprovidersmicrosoftnetworkpublicipaddresses-get
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Public IP Address
+  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/publicIPAddresses:
+    get:
+      summary: Public IPAddresses List
+      description: Gets all public IP addresses in a resource group.
+      operationId: PublicIPAddresses_List
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddresses-get
+      parameters:
+      - in: query
+        name: No Name
+      - in: path
+        name: resourceGroupName
+        description: The name of the resource group
+      responses:
+        200:
+          description: OK
+      tags:
+      - Public IP Address
+---
