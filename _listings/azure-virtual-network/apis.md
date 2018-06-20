@@ -7,10 +7,10 @@ description: Azure Virtual Network lets you create private networks in the cloud
   or connect privately by using the ExpressRoute service.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-network-topology.png
 x-kinRank: "10"
-x-alexaRank: ""
+x-alexaRank: "0"
 tags: Public
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/apis.md
 specificationVersion: "0.14"
 apis:
@@ -23,9 +23,9 @@ apis:
   tags: Public IP Address
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddressespublicipaddressname-delete-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-delete-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddressespublicipaddressname-delete-openapi.md
 - name: Azure Virtual Network API Public IPAddresses Get
   x-api-slug: azure-virtual-network-api
   description: Gets the specified public IP address in a specified resource group.
@@ -35,9 +35,9 @@ apis:
   tags: Public IP Address
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddressespublicipaddressname-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddressespublicipaddressname-get-openapi.md
 - name: Azure Virtual Network API Public IPAddresses Create Or Update
   x-api-slug: azure-virtual-network-api
   description: Creates or updates a static or dynamic public IP address.
@@ -47,7 +47,7 @@ apis:
   tags: Public IP Address
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-put-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddressespublicipaddressname-put-openapi.md
 - name: Azure Virtual Network API Public IPAddresses List All
   x-api-slug: azure-virtual-network-api
   description: Gets all the public IP addresses in a subscription.
@@ -57,7 +57,7 @@ apis:
   tags: Public IP Address
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidprovidersmicrosoftnetworkpublicipaddresses-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidprovidersmicrosoft-networkpublicipaddresses-get-openapi.md
 - name: Azure Virtual Network API Public IPAddresses List
   x-api-slug: azure-virtual-network-api
   description: Gets all public IP addresses in a resource group.
@@ -67,7 +67,7 @@ apis:
   tags: Public IP Address
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddresses-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-virtual-network/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddresses-get-openapi.md
 - name: Azure Virtual Network API
   x-api-slug: azure-virtual-network-api
   description: Azure Virtual Network lets you create private networks in the cloud

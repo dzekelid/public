@@ -27,7 +27,7 @@ paths:
         m4a, mp3, mp4, png, wav. Content type in response depends on ''extension''
         parameter, e.g. image/jpeg, image/png, audio/mp3, etc'
       operationId: getMediaDataByKey
-      x-api-path-slug: mediapublickeyextension-get
+      x-api-path-slug: mediapublickey-extension-get
       parameters:
       - in: path
         name: extension

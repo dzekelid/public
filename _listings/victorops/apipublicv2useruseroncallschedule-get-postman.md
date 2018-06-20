@@ -1,16 +1,16 @@
 {
   "info": {
-    "name": "VictorOps Get a user's on-call schedule",
-    "_postman_id": "0506cb99-47ca-4107-9ec0-b4ca72fa01ae",
+    "name": "Victor Ops Get a user's on-call schedule",
+    "_postman_id": "35f0fd78-48e6-4c53-8fb2-1df2db22dbc4",
     "description": "Get the on-call schedule for a user for all teams the user is on, including on-call overrides.\n\nThis API may be called a maximum of 15 times per minute.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
     {
-      "name": "Continuous Deployment",
+      "name": "Alerts",
       "item": [
         {
-          "id": "bdde7ebb-0e8d-4c1a-8990-882e0494ecf6",
+          "id": "c729a8f7-afa5-46f7-92b2-2b174c2f16eb",
           "name": "api_public.v1.alerts.uuid.get",
           "request": {
             "url": {
@@ -45,12 +45,17 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "bca75e2f-eb0f-414b-bac2-80790efe6fce"
+              "id": "aa74a634-0f56-4388-903b-3f643c86ba89"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Incidents",
+      "item": [
         {
-          "id": "5a726335-b125-4ad1-a229-555830aad783",
+          "id": "eb9f4fac-7eeb-46d9-b52d-c235df7b4475",
           "name": "api_public.v1.incidents.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents?No Name=%7B%7D",
@@ -65,12 +70,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "f2ad827d-e5b4-4c43-9fda-81d1cec5d338"
+              "id": "5b7389c7-b70f-4499-96d8-0958455646ea"
             }
           ]
         },
         {
-          "id": "8dfa3b30-f907-4da0-b39d-906d183ccf49",
+          "id": "6f74d5f8-1b3c-43df-82eb-5ef84044eca2",
           "name": "api_public.v1.incidents.post",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents?No Name=%7B%7D",
@@ -85,12 +90,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "b6bdcf7b-7349-4719-92f0-4ab44282f464"
+              "id": "a7e653dc-1b1d-499d-8f68-0d1a6f2dee96"
             }
           ]
         },
         {
-          "id": "e471eca2-110a-4bfc-a919-5a43fd2f105d",
+          "id": "f3779258-f6e1-4bd7-9104-9473ec7b820f",
           "name": "api_public.v1.incidents.ack.patch",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents/ack?No Name=%7B%7D",
@@ -105,12 +110,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "04ea4af9-6fbb-4f32-b90f-d76f3399bd6f"
+              "id": "9561f60d-9776-44f4-a0de-17ef1c9c2d01"
             }
           ]
         },
         {
-          "id": "f53c9277-8751-4744-9b31-d77c17951d97",
+          "id": "9862fb6e-e774-4f1a-95c7-562ffcb5e8ee",
           "name": "api_public.v1.incidents.byUser.ack.patch",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents/byUser/ack?No Name=%7B%7D",
@@ -125,12 +130,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "0baa3927-481e-45a8-9ab8-4880a0b61cd6"
+              "id": "5b0e7b81-05f0-4ea9-a6a6-69df4e3d8033"
             }
           ]
         },
         {
-          "id": "1edcdcef-1457-4edc-ae3e-e3256474c623",
+          "id": "1e878415-a7be-402c-8f37-87d24f26f27d",
           "name": "api_public.v1.incidents.byUser.resolve.patch",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents/byUser/resolve?No Name=%7B%7D",
@@ -145,12 +150,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "9fdfb272-7db1-4a56-91e5-8e8b88d06045"
+              "id": "80188663-a6be-47a2-9f31-034038aa0675"
             }
           ]
         },
         {
-          "id": "4f31cad6-ae51-4eb4-a462-3a6ef7153787",
+          "id": "d9460135-a147-4483-a013-3e63f6b366d3",
           "name": "api_public.v1.incidents.reroute.post",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents/reroute?No Name=%7B%7D",
@@ -165,12 +170,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "e14671ba-fcc0-4a72-a46f-c5956c2003ef"
+              "id": "a67f4eb9-82ff-47b3-8762-3d8ebd0392d1"
             }
           ]
         },
         {
-          "id": "e8707a12-7908-4e8d-95ca-9e564a28bb12",
+          "id": "54428893-1602-4f55-adaf-69ae1f2751ad",
           "name": "api_public.v1.incidents.resolve.patch",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents/resolve?No Name=%7B%7D",
@@ -185,12 +190,17 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "02e07365-73af-41fa-9b36-3de173eb82ad"
+              "id": "70970611-30c7-4ce4-9952-c377f0f73d3d"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Oncall",
+      "item": [
         {
-          "id": "2294dca3-645a-4e95-bbfe-4d45b3664954",
+          "id": "eb1b66dc-4db0-4869-a128-d06860ff0cb1",
           "name": "api_public.v1.oncall.current.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/oncall/current?No Name=%7B%7D",
@@ -205,12 +215,17 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "af71032c-d533-4b7a-b3b2-4b4a442251b0"
+              "id": "3ff03315-d22d-4369-910e-5fbb915fdddb"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Org",
+      "item": [
         {
-          "id": "3f167a44-75e2-495f-9adb-4e2a2966a7d8",
+          "id": "9e30999a-2514-4108-9a6e-76b6f1f9e9e8",
           "name": "api_public.v1.org.routing_keys.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/org/routing-keys?No Name=%7B%7D",
@@ -225,12 +240,17 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "15876a20-ba77-4a8f-99e8-442ae9c554a1"
+              "id": "008aac5a-ddf8-4fd7-a6da-b8f6f6f87f0b"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Policies",
+      "item": [
         {
-          "id": "138dd1dd-7420-48f2-b1c7-c0dc30f2a43a",
+          "id": "11011f42-0752-48bb-ad5d-fa59d40a8fc8",
           "name": "api_public.v1.policies.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/policies?No Name=%7B%7D",
@@ -245,12 +265,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "4058654e-c45a-4cbf-878b-7fd595f11c26"
+              "id": "b97574e9-c95a-4940-ba0d-a0b851fd2fb8"
             }
           ]
         },
         {
-          "id": "c36192b8-f917-401b-ad7a-2d6d6cebdb0a",
+          "id": "2aa4e38e-74fa-4594-964e-59dfb7725cad",
           "name": "api_public.v1.policies.types.contacts.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/policies/types/contacts?No Name=%7B%7D",
@@ -265,12 +285,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "63ff67dc-2c55-41b3-828a-2d18f98d68e2"
+              "id": "67535f69-a16e-4bb2-86ba-ddb35f4e3ab6"
             }
           ]
         },
         {
-          "id": "4b2f50d5-8157-4ba4-94d5-b9005572b947",
+          "id": "7dd8cd7c-038f-44c1-92d4-ca42d5956d8e",
           "name": "api_public.v1.policies.types.notifications.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/policies/types/notifications?No Name=%7B%7D",
@@ -285,12 +305,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "fade28ea-2613-4be9-a229-10da3c811879"
+              "id": "ac0fc444-cbec-4749-8a42-e2f5a4004767"
             }
           ]
         },
         {
-          "id": "6dd4440c-954f-4eba-a357-3ce9c42fad4f",
+          "id": "5c379bcf-cf9a-4fcf-ba10-46417f7fab8d",
           "name": "api_public.v1.policies.types.timeouts.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/policies/types/timeouts?No Name=%7B%7D",
@@ -305,12 +325,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "77bedea5-9742-4e6d-8cf1-4f6ba4a0ce92"
+              "id": "330f6a75-d926-461e-afe6-df6b9de2c9e0"
             }
           ]
         },
         {
-          "id": "259d5098-8b38-4aeb-ad7f-eadc4008fc66",
+          "id": "8eca6812-4f8a-4cd4-93c7-a7839839b8d1",
           "name": "api_public.v1.policies.policy.oncall.user.patch",
           "request": {
             "url": {
@@ -345,12 +365,17 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "dd4c4813-47f5-4924-98ae-8a3b1b958d74"
+              "id": "2546e3e5-f1f7-4e8f-8068-d528e531f2c7"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Profile",
+      "item": [
         {
-          "id": "3092aa2c-ac0d-4ea7-b9ad-99a3406e8124",
+          "id": "09cf410b-a56b-4df9-a718-b9eac6f322df",
           "name": "api_public.v1.profile.username.policies.get",
           "request": {
             "url": {
@@ -385,12 +410,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "4f4ed2cb-de9d-49b4-94b3-7c2013fdd2e4"
+              "id": "0f117a14-eb61-4762-90e1-317061379679"
             }
           ]
         },
         {
-          "id": "cfd5435b-0bc3-41b0-9699-3667e3dac7b5",
+          "id": "1aa278c7-f68c-44ff-99e6-209d467a7e43",
           "name": "api_public.v1.profile.username.policies.post",
           "request": {
             "url": {
@@ -425,12 +450,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "a0384f0c-6997-49b9-ab5c-c1dcf0b72e00"
+              "id": "5ff26787-6273-4e5f-bda3-a0b36f06a8b8"
             }
           ]
         },
         {
-          "id": "0492a4e7-0ee6-4740-ae12-dbe3c038498a",
+          "id": "56568adf-99ba-4c71-8d7a-0e4bbfb8fa8f",
           "name": "api_public.v1.profile.username.policies.step.get",
           "request": {
             "url": {
@@ -470,12 +495,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "2fa2a3de-72d0-4f4c-b5eb-3f1b340b816a"
+              "id": "e92d2c6f-5142-4eb3-b3a7-dee3b3ed6f2f"
             }
           ]
         },
         {
-          "id": "7c6e4fe0-3d0f-4954-ae04-2f8f85a9cf80",
+          "id": "1650984e-bd8c-4453-a8ae-2b80424c1ec7",
           "name": "api_public.v1.profile.username.policies.step.put",
           "request": {
             "url": {
@@ -515,12 +540,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "5f8c8985-a5b4-4a41-bfc6-71ec8d88217c"
+              "id": "d52152f7-9472-4a8a-b2ad-bfc0c5f3ba23"
             }
           ]
         },
         {
-          "id": "d7bd18f5-f59e-468a-9a59-77f21445eefa",
+          "id": "4fe1b1f1-f7ac-4aaa-b883-955e609dfa1d",
           "name": "api_public.v1.profile.username.policies.step.post",
           "request": {
             "url": {
@@ -560,12 +585,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "c7ea0b51-b14a-4046-b2ee-ff64f044f1b7"
+              "id": "34ba5869-4694-4900-9b53-f207f4a538dd"
             }
           ]
         },
         {
-          "id": "6c3f4b29-7536-4dd8-9141-d6718b01b572",
+          "id": "fb648826-e945-4a2d-a71d-b7da63cb8c70",
           "name": "api_public.v1.profile.username.policies.step.rule.get",
           "request": {
             "url": {
@@ -610,12 +635,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "fbd4838e-956f-47b4-8d07-2d8c7751268e"
+              "id": "10f72100-6238-4050-83fc-72b78f275204"
             }
           ]
         },
         {
-          "id": "0b64c7aa-2373-4e31-b5e3-2092e2659fae",
+          "id": "56696d11-7131-481d-8375-698d902a0109",
           "name": "api_public.v1.profile.username.policies.step.rule.put",
           "request": {
             "url": {
@@ -660,12 +685,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "0525caea-6379-4c28-8fe6-912948cab6e2"
+              "id": "73358b78-a31e-438f-b6e3-b90b09664d5e"
             }
           ]
         },
         {
-          "id": "652565e0-216f-48eb-8aa4-d4bb4ef958df",
+          "id": "a01d0972-de13-4650-b576-04354a9b47ee",
           "name": "api_public.v1.profile.username.policies.step.rule.delete",
           "request": {
             "url": {
@@ -710,12 +735,17 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "f1d28dba-4fa4-44ae-a697-4706c7602023"
+              "id": "da14a769-45d8-49bd-ba6a-3accec6e8f23"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Team",
+      "item": [
         {
-          "id": "03011792-cbb1-4033-92ae-56eddf1e76cf",
+          "id": "203c723a-3590-4c5e-8c66-faf78c3eb111",
           "name": "api_public.v1.team.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/team?No Name=%7B%7D",
@@ -730,12 +760,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "1b581617-5f23-486c-8cd9-4539f04d5fff"
+              "id": "2268af0c-5e1c-4648-bae2-3067bfeabfe7"
             }
           ]
         },
         {
-          "id": "8763da26-825a-403b-9404-80810b7ee221",
+          "id": "17275556-a926-493a-8343-279f557cde08",
           "name": "api_public.v1.team.post",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/team?No Name=%7B%7D",
@@ -750,12 +780,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "cf4d0687-9b41-4a08-a481-e9bde9078c90"
+              "id": "e5b56c9a-8996-48a1-9ea7-2ecf7cf937b9"
             }
           ]
         },
         {
-          "id": "3068a53f-0e59-4ff2-8d37-7bdbb1783966",
+          "id": "cb9bcd98-bb6d-429c-8f8c-4eac7a2f0bfe",
           "name": "api_public.v1.team.team.get",
           "request": {
             "url": {
@@ -790,12 +820,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "b45052af-57d2-4f4f-bf13-c3f4959a607e"
+              "id": "d137c14c-8d8a-4e4f-afaf-faa5b2dfd405"
             }
           ]
         },
         {
-          "id": "2f034f2e-bb87-491c-97fc-c31e21a1f4bc",
+          "id": "0978b31a-ff46-4a36-a5af-c33142df6a4a",
           "name": "api_public.v1.team.team.put",
           "request": {
             "url": {
@@ -830,12 +860,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "de0acc7c-5b08-4aad-8675-b20bdd3ba1fd"
+              "id": "dd589d98-0579-458e-b327-cd12b916ef1d"
             }
           ]
         },
         {
-          "id": "1310ad6e-507d-4b41-95f3-743fd7953eca",
+          "id": "87e3c54f-5dd1-43c4-87e9-229ebc30a838",
           "name": "api_public.v1.team.team.delete",
           "request": {
             "url": {
@@ -870,12 +900,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "020e1bc7-557e-4b42-9e58-47b644c7c329"
+              "id": "eaa2dfda-dadc-4f63-b8f3-d7f23e100ef4"
             }
           ]
         },
         {
-          "id": "136e6caa-be87-4618-8fb6-a56ba0577962",
+          "id": "a45f7695-69fc-445f-a2f0-3ac0e69c343c",
           "name": "api_public.v1.team.team.members.get",
           "request": {
             "url": {
@@ -910,12 +940,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "5a114f80-5d5f-4b9c-a315-57842264459c"
+              "id": "ccedfab5-ec63-4331-9ab0-e921de429c0a"
             }
           ]
         },
         {
-          "id": "3727eeb2-40f3-4883-ab66-d11c6c5719bb",
+          "id": "5e08bada-4a4d-4bb5-814c-9b4237a32a88",
           "name": "api_public.v1.team.team.members.post",
           "request": {
             "url": {
@@ -950,12 +980,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "989c78de-8a1b-425f-9e62-eb2c0323fd5d"
+              "id": "21d566df-c3c5-4692-8811-7c7cdd100948"
             }
           ]
         },
         {
-          "id": "42b12ea6-d0c3-4279-8a86-b81e0d746ff1",
+          "id": "cb8b0023-9501-4b86-99dc-3410990fc9b6",
           "name": "api_public.v1.team.team.members.user.delete",
           "request": {
             "url": {
@@ -995,12 +1025,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "ebdf11d7-c1e1-4b26-8848-166fdc48f6dd"
+              "id": "8cafb53a-62ba-4ad4-92c9-f17534d9081e"
             }
           ]
         },
         {
-          "id": "ecaea90f-7c8a-4bf3-a415-99617e5b6572",
+          "id": "f310b42f-ef77-4485-836c-6c143d17c693",
           "name": "api_public.v1.team.team.oncall.schedule.get",
           "request": {
             "url": {
@@ -1035,12 +1065,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "938555f4-880d-42d0-af66-265c95be44da"
+              "id": "5ee8b13a-5496-46ec-85cc-573927f9851e"
             }
           ]
         },
         {
-          "id": "b4fb09de-c414-42b3-b4b8-459ba7a3269c",
+          "id": "69427448-821a-46f9-92b2-24bcb47049c1",
           "name": "api_public.v1.team.team.oncall.user.patch",
           "request": {
             "url": {
@@ -1075,12 +1105,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "fdecd621-27ce-40ca-b05d-a2e7f582b593"
+              "id": "96dcb8ac-6251-41fd-ae8b-0501445d6b03"
             }
           ]
         },
         {
-          "id": "ac9f2af4-40f0-4d23-aa11-aa4b8b0d1d94",
+          "id": "51085313-deb4-41f9-8516-c42f1f2394ee",
           "name": "api_public.v1.team.team.policies.get",
           "request": {
             "url": {
@@ -1115,12 +1145,17 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "d013d6f0-2fa5-49c3-85db-dfe0ef266333"
+              "id": "9524103e-f285-41b3-86e8-37fae7454242"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
         {
-          "id": "5458bea5-f0a1-4fa4-ab63-06ab2dc14d6a",
+          "id": "47310367-d0b5-4f76-8eff-c7621ec0dfe8",
           "name": "api_public.v1.user.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/user?No Name=%7B%7D",
@@ -1135,12 +1170,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "0834012d-0629-4322-809b-3b8bd5f5906d"
+              "id": "088f7a91-b6d8-4d61-a9e1-a29dc82d688d"
             }
           ]
         },
         {
-          "id": "d0386c57-e369-48c9-8854-6bc33a59338d",
+          "id": "75c6a68d-6f1c-4495-9035-cac3d04ffb70",
           "name": "api_public.v1.user.post",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/user?No Name=%7B%7D",
@@ -1155,12 +1190,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "14170e48-00f4-4267-9ef2-e913c834a760"
+              "id": "ad139673-bcb6-4f94-82ee-bda4a0b13bd0"
             }
           ]
         },
         {
-          "id": "66f4fe15-5d83-4f76-9dda-d13b5c2c546c",
+          "id": "a0dfbfdf-9ffb-4375-8a57-10108e9666d6",
           "name": "api_public.v1.user.user.get",
           "request": {
             "url": {
@@ -1195,12 +1230,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "ac78c33e-a246-48ab-88a3-c646fe3c8fd3"
+              "id": "1c7bf08c-b637-4f7c-8035-396a025bd9a4"
             }
           ]
         },
         {
-          "id": "7fd517ef-af64-413c-b4c9-9c6a64413215",
+          "id": "fbc29378-ac6c-47b4-ae42-ffb571672492",
           "name": "api_public.v1.user.user.put",
           "request": {
             "url": {
@@ -1235,12 +1270,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "52b3e460-242a-42d6-9cca-c8ad8eb8c253"
+              "id": "f1970ec5-d968-4975-acf2-c05099aade5f"
             }
           ]
         },
         {
-          "id": "71877f34-1674-4ac0-b2b0-4694c366922a",
+          "id": "7bbc2814-add5-49f7-8c99-f8553e21bba1",
           "name": "api_public.v1.user.user.delete",
           "request": {
             "url": {
@@ -1275,12 +1310,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "4c195e44-41ce-4f6c-b534-023185e27f2d"
+              "id": "349579d2-8546-4b6b-beac-19c2a7d73aad"
             }
           ]
         },
         {
-          "id": "ca4ac214-b9fd-47f9-afaf-5ccec2c135db",
+          "id": "edef8871-30d3-4061-8d78-0715d75c97dd",
           "name": "api_public.v1.user.user.contact_methods.get",
           "request": {
             "url": {
@@ -1315,12 +1350,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "7a3795ea-d542-401f-ac22-6bcf65c27dad"
+              "id": "9eed6617-6c3a-4aa6-99d4-30471f8876e4"
             }
           ]
         },
         {
-          "id": "d6ad03a5-c5c3-488f-80fd-88b6fd17ecef",
+          "id": "fa9b80f3-3f55-4180-ad6e-e11f899a03f8",
           "name": "api_public.v1.user.user.contact_methods.devices.get",
           "request": {
             "url": {
@@ -1355,12 +1390,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "5dc78aa8-7696-4228-8c56-e9c4a23dd10a"
+              "id": "d7454400-6709-4e15-abb1-2e8ff89ce03b"
             }
           ]
         },
         {
-          "id": "dc4fbc30-fc85-4b81-93ee-a860b4bd910f",
+          "id": "07bbb1ab-2a59-4aa8-9d9f-b5168a6a0dfd",
           "name": "api_public.v1.user.user.contact_methods.devices.contactId.get",
           "request": {
             "url": {
@@ -1400,12 +1435,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "0a4df0de-8c78-45be-8847-a3c21e35a7d1"
+              "id": "cdbfec6d-d252-49ab-9292-d56d234ec0ca"
             }
           ]
         },
         {
-          "id": "bd88284b-35ba-449b-aa5d-7a9087b5c499",
+          "id": "28ab61e6-0626-4fae-9ae5-4e44e6bb6ac5",
           "name": "api_public.v1.user.user.contact_methods.devices.contactId.put",
           "request": {
             "url": {
@@ -1445,12 +1480,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "4f7062df-b24b-466c-8d22-ebc2115e61b5"
+              "id": "58484d15-e6ae-4c8c-a1f3-01d7465b327e"
             }
           ]
         },
         {
-          "id": "dd1af524-8a62-4538-aaac-91f45ad57574",
+          "id": "bdab1917-07f6-4868-a41d-ced8d0c2dc1e",
           "name": "api_public.v1.user.user.contact_methods.devices.contactId.delete",
           "request": {
             "url": {
@@ -1490,12 +1525,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "377aa7fa-ce74-4a19-922a-b7ed81c74712"
+              "id": "f06c7f1c-3cd4-4b14-a727-b950acd92e8a"
             }
           ]
         },
         {
-          "id": "1644b238-309d-4b05-a597-99c1be73c04f",
+          "id": "66e1c016-d7e1-4083-b1ba-98b6ed9c0a89",
           "name": "api_public.v1.user.user.contact_methods.emails.get",
           "request": {
             "url": {
@@ -1530,12 +1565,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "b34cd5ff-fc51-4970-b013-70da8ff55af5"
+              "id": "53787423-b87f-4045-ac6e-e7d6237c45c2"
             }
           ]
         },
         {
-          "id": "48ef1056-3393-45e0-81be-351e8e6e79c6",
+          "id": "4cd8728f-767d-4780-81e3-e5e9d6c078b6",
           "name": "api_public.v1.user.user.contact_methods.emails.post",
           "request": {
             "url": {
@@ -1570,12 +1605,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "40ede2f2-3fd9-45cb-b2ce-f19837943d66"
+              "id": "79a4314e-eb1b-4bb9-8c51-8886822fb6e1"
             }
           ]
         },
         {
-          "id": "c9dedc7c-7fae-4222-9873-e87e6a84e3f1",
+          "id": "3e8950ad-d9ba-4187-81f0-49d5a8829556",
           "name": "api_public.v1.user.user.contact_methods.emails.contactId.get",
           "request": {
             "url": {
@@ -1615,12 +1650,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "166861ea-2933-4109-ab76-cdc3bd5418d6"
+              "id": "79b78f31-c3fb-4f80-9ec2-87a69efb0434"
             }
           ]
         },
         {
-          "id": "1f57869a-6d70-42cd-b2dc-ccc25ff2e1de",
+          "id": "15d282c2-b39d-419b-a119-b5e516ad0f6f",
           "name": "api_public.v1.user.user.contact_methods.emails.contactId.delete",
           "request": {
             "url": {
@@ -1660,12 +1695,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "cade1614-d2cf-4f3d-a3e7-df91fe6f2888"
+              "id": "31cb6dc2-a54f-46ba-9d34-ff21af7023b2"
             }
           ]
         },
         {
-          "id": "5902a483-7f03-4657-a927-4793a75a4144",
+          "id": "f1c6de29-e1c8-4ffa-b1dc-3a9dccf50589",
           "name": "api_public.v1.user.user.contact_methods.phones.get",
           "request": {
             "url": {
@@ -1700,12 +1735,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "78ff88e0-4bc4-4a3e-8faf-17ae9c854908"
+              "id": "4623d985-d244-4371-aaea-b562dd2dde15"
             }
           ]
         },
         {
-          "id": "63cad83f-41a5-4d73-a444-5fbbfdd6d39e",
+          "id": "0dd58138-7684-4c41-961a-25da241a918e",
           "name": "api_public.v1.user.user.contact_methods.phones.post",
           "request": {
             "url": {
@@ -1740,12 +1775,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "2273f592-2a0f-4180-af00-1354e0143a35"
+              "id": "36abebc4-233b-4f68-aa66-6fac9157f13e"
             }
           ]
         },
         {
-          "id": "3cc495fd-7bf4-494c-8c38-492f84a87b8c",
+          "id": "5de30315-2806-4cdb-9917-72c5e5ab3fe8",
           "name": "api_public.v1.user.user.contact_methods.phones.contactId.get",
           "request": {
             "url": {
@@ -1785,12 +1820,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "a60005c2-842e-4ec4-a50e-42cf5b2d03cf"
+              "id": "d4c04536-9100-4ddc-ba60-85758a5cbc65"
             }
           ]
         },
         {
-          "id": "8878cedb-58d6-447e-9dbd-0aee30333128",
+          "id": "55f1ffb2-a9d1-4252-b0d4-019b53a8d928",
           "name": "api_public.v1.user.user.contact_methods.phones.contactId.delete",
           "request": {
             "url": {
@@ -1830,12 +1865,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "ea8122f6-efe7-4692-840d-d3cf32d13bcb"
+              "id": "001d4c0d-e42f-41ba-b15f-ab144b5e7eb6"
             }
           ]
         },
         {
-          "id": "ac1f197a-7219-4afa-9773-1d54429366e0",
+          "id": "a137de59-eb10-4789-8ba8-fead29bec626",
           "name": "api_public.v1.user.user.oncall.schedule.get",
           "request": {
             "url": {
@@ -1870,12 +1905,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "6ad3cc92-dc11-469d-b3b7-8e817501c7c4"
+              "id": "ebaccdd0-8b2b-4ec2-8872-d8047f63e200"
             }
           ]
         },
         {
-          "id": "1e207f74-a5aa-4e41-9df1-234311e3bb16",
+          "id": "34785c1c-ae55-454b-8517-640d693a83f4",
           "name": "api_public.v1.user.user.policies.get",
           "request": {
             "url": {
@@ -1910,12 +1945,17 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "f0957bd0-2a92-465f-a372-2620240f6755"
+              "id": "ba27d12e-1aad-4e9c-b974-cd5e0b831c17"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Api-public",
+      "item": [
         {
-          "id": "d6a726e5-d34f-47d8-8f29-9b030d05a14b",
+          "id": "4bdc5b13-13d4-4fa5-a9c3-a288d363615c",
           "name": "api_public.v2.team.team.oncall.schedule.get",
           "request": {
             "url": {
@@ -1950,12 +1990,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "c7020973-ca60-4cf5-9a85-2dfa6b0a063e"
+              "id": "ed04d058-1384-40a3-a2d4-1c87c7e0ba3b"
             }
           ]
         },
         {
-          "id": "5a758bd6-7d9a-4cf3-9e18-c0a46e3c698c",
+          "id": "5d6cc46c-3955-43c5-92c2-45e05c142ba8",
           "name": "api_public.v2.user.user.oncall.schedule.get",
           "request": {
             "url": {
@@ -1971,18 +2011,4 @@
                   "disabled": false
                 }
               ],
-              "variable": [
-                {
-                  "id": "user",
-                  "value": "{}",
-                  "type": "string"
-                }
-              ]
-            },
-            "method": "GET",
-            "body": {
-              "mode": "raw"
-            },
-            "description": "Get the on-call schedule for a user for all teams the user is on, including on-call overrides.\n\nThis API may be called a maximum of 15 times per minute."
-          },
-          "r
+   

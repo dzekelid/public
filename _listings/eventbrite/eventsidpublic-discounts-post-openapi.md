@@ -3,11 +3,11 @@ swagger: "2.0"
 x-collection-name: Eventbrite
 x-complete: 0
 info:
-  title: Eventbrite Add Events  Public Discounts
+  title: Eventbrite Post Events Public Discounts
   description: Please use https://www.eventbrite.com/developer/v3/endpoints/cross_event_discounts/#ebapi-post-discounts
   version: 1.0.0
-host: www.eventbriteapi.com
-basePath: /v3
+host: www.eventbrite.com
+basePath: /%7Bdata-type%7D/
 schemes:
 - http
 produces:
@@ -17,7 +17,7 @@ consumes:
 paths:
   /events/{id}/public_discounts/:
     get:
-      summary: Get Events  Public Discounts
+      summary: Get Events Public Discounts
       description: Please use https://www.eventbrite.com/developer/v3/endpoints/users/#ebapi-get-users-user-id-discounts
       operationId: getEventsPublicDiscounts
       x-api-path-slug: eventsidpublic-discounts-get
@@ -26,11 +26,10 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Public
       - Discounts
     post:
-      summary: Add Events  Public Discounts
+      summary: Post Events Public Discounts
       description: Please use https://www.eventbrite.com/developer/v3/endpoints/cross_event_discounts/#ebapi-post-discounts
       operationId: postEventsPublicDiscounts
       x-api-path-slug: eventsidpublic-discounts-post
@@ -39,7 +38,6 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Public
       - Discounts
 x-streamrank:

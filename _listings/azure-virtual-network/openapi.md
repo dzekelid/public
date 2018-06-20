@@ -4,7 +4,7 @@ x-collection-name: Azure Virtual Network
 x-complete: 1
 info:
   title: NetworkManagementClient
-  description: the-microsoft-azure-network-management-api-provides-a-restful-set-of-web-services-that-interact-with-microsoft-azure-networks-service-to-manage-your-network-resources-the-api-has-entities-that-capture-the-relationship-between-an-end-user-and-the-microsoft-azure-networks-service
+  description: the-microsoft-azure-network-management-api-provides-a-restful-set-of-web-services-that-interact-with-microsoft-azure-networks-service-to-manage-your-network-resources--the-api-has-entities-that-capture-the-relationship-between-an-end-user-and-the-microsoft-azure-networks-service-
   version: 1.0.0
 host: management.azure.com
 basePath: /
@@ -20,7 +20,7 @@ paths:
       summary: Public IPAddresses Delete
       description: Deletes the specified public IP address.
       operationId: PublicIPAddresses_Delete
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-delete
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddressespublicipaddressname-delete
       parameters:
       - in: query
         name: No Name
@@ -39,7 +39,7 @@ paths:
       summary: Public IPAddresses Get
       description: Gets the specified public IP address in a specified resource group.
       operationId: PublicIPAddresses_Get
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-get
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddressespublicipaddressname-get
       parameters:
       - in: query
         name: $expand
@@ -61,7 +61,7 @@ paths:
       summary: Public IPAddresses Create Or Update
       description: Creates or updates a static or dynamic public IP address.
       operationId: PublicIPAddresses_CreateOrUpdate
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddressespublicipaddressname-put
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddressespublicipaddressname-put
       parameters:
       - in: query
         name: No Name
@@ -87,7 +87,7 @@ paths:
       summary: Public IPAddresses List All
       description: Gets all the public IP addresses in a subscription.
       operationId: PublicIPAddresses_ListAll
-      x-api-path-slug: subscriptionssubscriptionidprovidersmicrosoftnetworkpublicipaddresses-get
+      x-api-path-slug: subscriptionssubscriptionidprovidersmicrosoft-networkpublicipaddresses-get
       parameters:
       - in: query
         name: No Name
@@ -101,7 +101,7 @@ paths:
       summary: Public IPAddresses List
       description: Gets all public IP addresses in a resource group.
       operationId: PublicIPAddresses_List
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftnetworkpublicipaddresses-get
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networkpublicipaddresses-get
       parameters:
       - in: query
         name: No Name

@@ -3,11 +3,11 @@ swagger: "2.0"
 x-collection-name: Eventbrite
 x-complete: 0
 info:
-  title: Eventbrite Get Events  Public Discounts
+  title: Eventbrite Get Events Public Discounts
   description: Please use https://www.eventbrite.com/developer/v3/endpoints/users/#ebapi-get-users-user-id-discounts
   version: 1.0.0
-host: www.eventbriteapi.com
-basePath: /v3
+host: www.eventbrite.com
+basePath: /%7Bdata-type%7D/
 schemes:
 - http
 produces:
@@ -17,7 +17,7 @@ consumes:
 paths:
   /events/{id}/public_discounts/:
     get:
-      summary: Get Events  Public Discounts
+      summary: Get Events Public Discounts
       description: Please use https://www.eventbrite.com/developer/v3/endpoints/users/#ebapi-get-users-user-id-discounts
       operationId: getEventsPublicDiscounts
       x-api-path-slug: eventsidpublic-discounts-get
@@ -26,7 +26,6 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Public
       - Discounts
 x-streamrank:

@@ -19,7 +19,7 @@ paths:
       summary: Managers Get Public Encryption Key
       description: Returns the symmetric encrypted public encryption key of the manager.
       operationId: Managers_GetPublicEncryptionKey
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftstorsimplemanagersmanagernamelistpublicencryptionkey-post
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-storsimplemanagersmanagernamelistpublicencryptionkey-post
       parameters:
       - in: query
         name: No Name

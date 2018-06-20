@@ -5,10 +5,10 @@ description: Azure Storage offers non-relational data storage including Blob Sto
   Table Storage, Queue Storage, and Files.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-storage.png
 x-kinRank: "10"
-x-alexaRank: ""
+x-alexaRank: "0"
 tags: Public
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-storage/apis.md
 specificationVersion: "0.14"
 apis:
@@ -21,9 +21,9 @@ apis:
   tags: Managers Public Encryption Key
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-storage/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftstorsimplemanagersmanagernamelistpublicencryptionkey-post-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-storage/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-storsimplemanagersmanagernamelistpublicencryptionkey-post-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-storage/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftstorsimplemanagersmanagernamelistpublicencryptionkey-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/azure-storage/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-storsimplemanagersmanagernamelistpublicencryptionkey-post-openapi.md
 - name: Azure Storage API
   x-api-slug: azure-storage-api
   description: Azure Storage offers non-relational data storage including Blob Storage,
