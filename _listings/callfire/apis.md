@@ -7,36 +7,27 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-call
 x-kinRank: "9"
 x-alexaRank: "129466"
 tags: Public
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/callfire/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Callfire Download media by extension
-  x-api-slug: callfire
+- name: CallFire - Download media by extension
+  x-api-slug: mediapublickey-extension-get
   description: 'Download a media file. Available types of files: bmp, gif, jpg, m4a,
     mp3, mp4, png, wav. Content type in response depends on ''extension'' parameter,
     e.g. image/jpeg, image/png, audio/mp3, etc'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//media/public/{key}.{extension}
-  tags: Media,Public,Key.extension
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/callfire/mediapublickey-extension-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/callfire/mediapublickey-extension-get-openapi.md
-- name: Callfire
-  x-api-slug: callfire
-  description: Grow your business with virtual phone numbers, IVR, voice broadcasting,
-    mass text messaging services and power dialing. Try CallFire for FREE!
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2
-  tags: Public
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/callfire/openapi.md
 x-common:
 - type: x--net-sdk
   url: https://github.com/CallFire/CallFire-CSharp-SDK
@@ -44,6 +35,10 @@ x-common:
   url: https://answers.callfire.com/hc/en-us/sections/200166268-Billing
 - type: x-account-settings
   url: https://answers.callfire.com/hc/en-us/sections/200187056-Account-Settings
+- type: x-api-gallery
+  url: http://bureau.of.justice.statistics.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://callfire.stack.network
 - type: x-authentication
   url: https://www.callfire.com/api-documentation/how-do-i-enable-api-on-my-account
 - type: x-blog

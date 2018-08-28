@@ -8,101 +8,117 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "64"
 tags: Public
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Github Get Gists Public
-  x-api-slug: github
+- name: GitHub - Get Gists Public
+  x-api-slug: gistspublic-get
   description: List all public gists.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////gists/public
-  tags: Gists, Public
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/gistspublic-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/gistspublic-get-openapi.md
-- name: Github Get Orgs Org Public Members
-  x-api-slug: github
+- name: GitHub - Get Orgs Org Public Members
+  x-api-slug: orgsorgpublic-members-get
   description: |-
     Public members list.
     Members of an organization can choose to have their membership publicized
     or not.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////orgs/{org}/public_members
-  tags: Orgs, Org, Public, Members
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/orgsorgpublic-members-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/orgsorgpublic-members-get-openapi.md
-- name: Github Delete Orgs Org Public Members Username
-  x-api-slug: github
+- name: GitHub - Delete Orgs Org Public Members Username
+  x-api-slug: orgsorgpublic-membersusername-delete
   description: Conceal a user's membership.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////orgs/{org}/public_members/{username}
-  tags: Orgs, Org, Public, Members, Username
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/orgsorgpublic-membersusername-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/orgsorgpublic-membersusername-delete-openapi.md
-- name: Github Get Orgs Org Public Members Username
-  x-api-slug: github
+- name: GitHub - Get Orgs Org Public Members Username
+  x-api-slug: orgsorgpublic-membersusername-get
   description: Check public membership.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////orgs/{org}/public_members/{username}
-  tags: Orgs, Org, Public, Members, Username
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/orgsorgpublic-membersusername-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/orgsorgpublic-membersusername-get-openapi.md
-- name: Github Put Orgs Org Public Members Username
-  x-api-slug: github
+- name: GitHub - Put Orgs Org Public Members Username
+  x-api-slug: orgsorgpublic-membersusername-put
   description: Publicize a user's membership.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////orgs/{org}/public_members/{username}
-  tags: Orgs, Org, Public, Members, Username
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/orgsorgpublic-membersusername-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/orgsorgpublic-membersusername-put-openapi.md
-- name: Github Get Users Username Received Events Public
-  x-api-slug: github
+- name: GitHub - Get Users Username Received Events Public
+  x-api-slug: usersusernamereceived-eventspublic-get
   description: List public events that a user has received
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////users/{username}/received_events/public
-  tags: Users, Username, Received, Events, Public
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/usersusernamereceived-eventspublic-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/usersusernamereceived-eventspublic-get-openapi.md
-- name: Github
-  x-api-slug: github
-  description: GitHub brings together the worlds largest community of developers to
-    discover, share, and build better software. From open source projects to private
-    team repositories, were your all-in-one platform for collaborative development.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
-  humanURL: https://github.com
-  baseURL: https://api.github.com//
-  tags: Public
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/public/master/_listings/github/openapi.md
 x-common:
 - type: x--net-library
   url: https://github.com/octokit/octokit.net
+- type: x-api-gallery
+  url: http://giphy.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://github.stack.network
 - type: x-base
   url: https://api.github.com
 - type: x-blog
